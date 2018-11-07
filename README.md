@@ -1,2 +1,4 @@
 # reims-1018-java-le-quizz
-Tony CHEVRIS
+
+Created by LEGRAND Alexis, Tony CHEVRIS,
+
