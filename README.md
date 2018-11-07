@@ -1,7 +1,3 @@
 # reims-1018-java-le-quizz
 
-
-Created by LEGRAND Alexis, Tony CHEVRIS, Mohamed KABA, Anabelle Baynard.
-
-
-
+Created by Alexis LEGRAND, Tony CHEVRIS, Mohamed KABA et Anabelle BAYNARD.
