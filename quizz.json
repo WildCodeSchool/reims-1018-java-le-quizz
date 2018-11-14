@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "content": "Quelle potion permet d'avoir une chance extraordinaire ?",
+    "level": 1,
+    "theme": "potions",
+    "answers": [
+      "polynectar",
+      "felix felicis",
+      "veritaserum",
+      "bièraubeurre",
+    ],
+    "right_answer": 2,
+  },
+  {
+    "id": 2,
+    "content": "Quelle créature a un corps de cheval, mais un torse, des bras et une tête humaine ?",
+    "level": 1,
+    "theme": "animaux fantastiques",
+    "answers": [
+      "centaure",
+      "chimère",
+      "botruc",
+      "basilic",
+    ],
+    "right_answer": 1,
+  },
+]
