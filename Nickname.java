@@ -2,21 +2,16 @@ import java.util.Scanner;
 
 class Nickname {
 
-	Scanner sc = new Scanner(System.in);
+	public static void enterLogin () {
 
-	public String enterLogin () {
-
-	return "Please enter nickname and press enter before starting the quizz ";
-
-
+	System.out.println("Please enter nickname and press enter before starting the quizz ");
 	}
 
-	public String loginFeedback () {
+	public static void loginFeedback () {
 
+	Scanner sc = new Scanner(System.in);
 	String nick = sc.nextLine();
-
-	return "Welcome " + nick + " , are you ready to face our quizz ?";
-
+	System.out.println("Welcome " + nick + " , are you ready to face our quizz ?");
 	}
 
 }

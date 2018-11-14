@@ -1,14 +1,14 @@
+import java.util.Scanner; 
+import java.util.*;
+
 class Quizz {
   public static void main(String[] args){
-      QuizzDisplay.homePage();
-  }
+      QuizzDisplay.displayHello();
 
-  public void nickDisplay (String nick) {
-      Nickname.enterLogin();
-      System.out.println(enterLogin());
-      Nickname.loginFeedback();
-      System.out.println(loginFeedback());  
+      String nickname = QuizzDisplay.askForNickname();
+      nickname = "joueur/joueuse " + nickname;
 
+      QuizzDisplay.displayNickname(nickname);
   }
 
 }
