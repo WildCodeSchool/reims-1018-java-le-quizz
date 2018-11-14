@@ -35,9 +35,6 @@
       "Levitation Charm",
       "Stupefy",
       "Voleti Voleta",
-    ],
-    "right_answer": 2,
-  },
   {
     "id": 4,
     "content": "Who is the director of Hogwarts in the first year of Harry Potter?",
@@ -129,3 +126,4 @@
     ],
     "right_answer": 3,
   },
+]
