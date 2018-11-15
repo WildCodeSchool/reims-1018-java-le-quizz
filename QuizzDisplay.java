@@ -26,8 +26,8 @@ class QuizzDisplay {
 		System.out.println("Please enter nickname and press enter before starting the quizz ");
 
 		Scanner sc = new Scanner(System.in);
-		String toto = sc.nextLine();
-		return toto;
+		String playerNick = sc.nextLine();
+		return playerNick;
 	}
 
 	public static void displayNickname (String nick) {
@@ -37,8 +37,34 @@ class QuizzDisplay {
     public static void displayLaunch (){
       System.out.println("Enter 'play' to start the quizz");
       Scanner sc = new Scanner (System.in);
-      String str = sc.nextLine();
-      System.out.println("Here we go!");
-    }
+      String playerLaunchCommand = sc.nextLine();
+      String officialLaunchCommand = "play";
 
+      while (!playerLaunchCommand.equals(officialLaunchCommand)) {
+
+      	try {
+      		playerLaunchCommand = sc.nextLine();
+      	}
+
+      	catch(InputMismatchException exception) {
+    	}
+
+    	if (!playerLaunchCommand.equals(officialLaunchCommand)) {
+    		System.out.println("You did not type correctly 'play', please try again");
+    	}
+      	
+	  }
+
+	System.out.println("Here we go!");
+	}
+  
 }
+
+
+      
+
+   
+
+    
+
+
