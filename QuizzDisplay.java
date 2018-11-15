@@ -2,7 +2,6 @@ import java.util.Scanner;
 import java.util.*;
 
 class QuizzDisplay {
-
   	public static void homePage (){
   	System.out.println("Welcome to the quizz");
     System.out.println("Who wants to win Galleons ?");
@@ -59,12 +58,3 @@ class QuizzDisplay {
 	}
   
 }
-
-
-      
-
-   
-
-    
-
-
