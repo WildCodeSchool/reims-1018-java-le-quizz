@@ -1,6 +1,7 @@
-import java.util.Scanner; 
+import java.util.Scanner;
+import java.util.*;
 
-class QuizzDisplay {
+class QuizzDisplay{
 
   	public static void homePage (){
   	System.out.println("Welcome to the quizz");
@@ -19,17 +20,22 @@ class QuizzDisplay {
     System.out.println("At any time you can get out of the game and go with the galleys you got.");
     System.out.println("The game will end when you get 15 galleons (7,395 noises !!)");
     System.out.println("Good luck!");
-  	}
+  }
 
-	public static String askForNickname () {
-		System.out.println("Please enter nickname and press enter before starting the quizz ");
+  public static void displayLaunch (){
+    System.out.println("Enter 'play' to start the quizz");
+    Scanner sc = new Scanner (System.in);
+    String str = sc.nextLine();
+    System.out.println("Here we go!");
+    }
+    public static String askForNickname () {
+      System.out.println("Please enter nickname and press enter before starting the quizz ");
+      Scanner sc = new Scanner(System.in);
+      String toto = sc.nextLine();
+      return toto;
+    }
 
-		Scanner sc = new Scanner(System.in);
-		String toto = sc.nextLine();
-		return toto;
-	}
-
-	public static void displayNickname (String nick) {
-      System.out.println("Welcome " + nick + " , are you ready to face our quizz ?");
-	}
+    public static void displayNickname (String nick) {
+        System.out.println("Welcome " + nick + " , are you ready to face our quizz ?");
+    }
 }
