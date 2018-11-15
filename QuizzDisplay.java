@@ -19,6 +19,7 @@ class QuizzDisplay {
     System.out.println("At any time you can get out of the game and go with the galleys you got.");
     System.out.println("The game will end when you get 15 galleons (7,395 noises !!)");
     System.out.println("Good luck!");
+
   	}
 
 	public static String askForNickname () {
@@ -55,6 +56,7 @@ class QuizzDisplay {
 	  }
 
 	System.out.println("Here we go!");
-	}
-  
+
+    }
+
 }
