@@ -22,12 +22,7 @@ class QuizzDisplay{
     System.out.println("Good luck!");
   }
 
-  public static void displayLaunch (){
-    System.out.println("Enter 'play' to start the quizz");
-    Scanner sc = new Scanner (System.in);
-    String str = sc.nextLine();
-    System.out.println("Here we go!");
-    }
+  
     public static String askForNickname () {
       System.out.println("Please enter nickname and press enter before starting the quizz ");
       Scanner sc = new Scanner(System.in);
@@ -37,5 +32,12 @@ class QuizzDisplay{
 
     public static void displayNickname (String nick) {
         System.out.println("Welcome " + nick + " , are you ready to face our quizz ?");
+      
+      public static void displayLaunch (){
+    System.out.println("Enter 'play' to start the quizz");
+    Scanner sc = new Scanner (System.in);
+    String str = sc.nextLine();
+    System.out.println("Here we go!");
     }
+
 }
