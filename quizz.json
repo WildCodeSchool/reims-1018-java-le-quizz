@@ -12,6 +12,7 @@
     ],
     "right_answer": 3,
   },
+
   {
     "id": 2,
     "content": "Which of these houses does not belong to Hogwarts?",
@@ -35,6 +36,8 @@
       "Levitation Charm",
       "Stupefy",
       "Voleti Voleta",
+    ],
+  },
   {
     "id": 4,
     "content": "Who is the director of Hogwarts in the first year of Harry Potter?",

@@ -1,4 +1,4 @@
-import java.util.Scanner; 
+import java.util.Scanner;
 import java.util.*;
 
 class QuizzDisplay {
@@ -52,11 +52,13 @@ class QuizzDisplay {
     	if (!playerLaunchCommand.equals(officialLaunchCommand)) {
     		System.out.println("You did not type correctly 'play', please try again");
     	}
-      	
+
 	  }
 
 	System.out.println("Here we go!");
 
     }
+
+
 
 }
