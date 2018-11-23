@@ -11,10 +11,9 @@ import java.util.*;
 class QuestionQuizz {
   private static String QUIZZ_PATH = "quizz.json";
   private ArrayList <Question> questionsTable ;
-  //private String question;
 
   public QuestionQuizz(){
-    System.out.println("ça marche ou pas?");
+  //  System.out.println("ça marche ou pas?");
     FileReader jsonFile = null;
     try {
       // lecture du fichier json
@@ -32,22 +31,22 @@ class QuestionQuizz {
     if (jsonParsed != null){
       System.out.println("le parse a réussi!");
     }
-    List<Question> questionsTable = new ArrayList<Question>();
 
     JSONArray root = (JSONArray) jsonParsed;
+    this.questionsTable = new ArrayList <Question>();
     for (int i=0;i<root.size();i++){
+      List<String> answers = new ArrayList<String>();
       JSONObject questionObject = (JSONObject)root.get(i);
       String realQuestion = (String) questionObject.get("content");
       int idQuestion= Math.toIntExact ( (long) questionObject.get("id") );
-      String answersQuestion = (String) questionObject.get ("answers");
-      Question question= new Question (idQuestion, realQuestion, answersQuestion);
-      questionsTable.add(question);
-    //  List <String>=new ArrayList <String>(i);
-    //  String answersQuestion = (String) answersQuestion.get("answers");
+      JSONArray answersQuestion = (JSONArray) questionObject.get("answers");
+      for (int j = 0; j < answersQuestion.size(); j++) {
+          String answer = (String) answersQuestion.get(j);
+          answers.add(answer);
+        }
+      Question question= new Question (idQuestion, realQuestion, answers);
+      this.questionsTable.add(question);
 
-    }
-    for(var question : questionsTable) {
-      System.out.println(question.getContent());
     }
   }
   public Question getFirstQuestion (){

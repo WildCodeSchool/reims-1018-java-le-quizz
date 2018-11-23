@@ -15,7 +15,11 @@ class Quizz {
     QuizzDisplay.displayNickname(nickname);
     QuizzDisplay.displayLaunch();
     var questionQuizz = new QuestionQuizz();
-    System.out.println(questionQuizz.getFirstQuestion());
+    var question = questionQuizz.getFirstQuestion();
+    System.out.println(question.getContent());
+    for(var answer : question.getAnswers()) {
+      System.out.println(answer);
+    }
   }
 
 }

@@ -1,12 +1,14 @@
+import java.util.*;
+
 class Question{
   private int id;
   private String content;
-  private String answers;
+  private List <String> answers;
 
-  public Question(int id, String content , String answers){
+  public Question(int id, String content , List <String> answers){
     this.id = id;
     this.content = content;
-  //  this.answers = answers;
+    this.answers = answers;
   }
   public int getId(){
     return this.id;
@@ -20,10 +22,10 @@ class Question{
   public void setContent (String content){
     this.content=content;
   }
-  public String getAnswers(){
+  public List<String> getAnswers(){
     return this.answers;
   }
-  public void setAnswers (String answers){
+  public void setAnswers (List<String> answers){
     this.answers=answers;
   }
 }
