@@ -24,7 +24,6 @@ class QuizzDisplay {
 
 	public static String askForNickname () {
 		System.out.println("Please enter nickname and press enter before starting the quizz ");
-
 		Scanner sc = new Scanner(System.in);
 		String playerNick = sc.nextLine();
 		return playerNick;
@@ -58,7 +57,6 @@ class QuizzDisplay {
 	System.out.println("Here we go!");
 
     }
-
 
 
 }

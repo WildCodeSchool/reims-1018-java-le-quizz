@@ -1,9 +1,9 @@
 class Question{
   private int id;
   private String content;
-//  private JSONArray answers;
+  private String answers;
 
-  public Question(int id, String content /*, JSONArray answers*/){
+  public Question(int id, String content , String answers){
     this.id = id;
     this.content = content;
   //  this.answers = answers;
@@ -20,10 +20,10 @@ class Question{
   public void setContent (String content){
     this.content=content;
   }
-/*  public JSONArray getAnswers(){
+  public String getAnswers(){
     return this.answers;
   }
-  public void setAnswers (JSONArray){
+  public void setAnswers (String answers){
     this.answers=answers;
-  }*/
+  }
 }
