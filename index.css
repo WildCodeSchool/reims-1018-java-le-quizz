@@ -1,0 +1,35 @@
+body {
+background-image: url(journal.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+background-attachment: fixed;
+}
+
+header  {
+    text-align: center;    
+}
+
+.topDepart {
+    margin-left: 15%;
+    width: 70%;
+}
+
+h2 {
+    text-align: center;
+    border: 3px black outset;
+}
+
+div[class*="col"] {
+    border: 1px black solid;
+}
+
+.role {
+    text-align: center;
+}
+
+header {
+    background-image: url(GoldBanner.jpg);  
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
