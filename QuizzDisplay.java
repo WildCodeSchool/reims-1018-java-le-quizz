@@ -1,4 +1,4 @@
-import java.util.Scanner; 
+import java.util.Scanner;
 import java.util.*;
 
 class QuizzDisplay {
@@ -24,7 +24,6 @@ class QuizzDisplay {
 
 	public static String askForNickname () {
 		System.out.println("Please enter nickname and press enter before starting the quizz ");
-
 		Scanner sc = new Scanner(System.in);
 		String playerNick = sc.nextLine();
 		return playerNick;
@@ -52,11 +51,12 @@ class QuizzDisplay {
     	if (!playerLaunchCommand.equals(officialLaunchCommand)) {
     		System.out.println("You did not type correctly 'play', please try again");
     	}
-      	
+
 	  }
 
 	System.out.println("Here we go!");
 
     }
+
 
 }
