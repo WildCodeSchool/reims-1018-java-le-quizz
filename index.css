@@ -6,7 +6,7 @@ background-attachment: fixed;
 }
 
 header  {
-    text-align: center;    
+    text-align: center;
 }
 
 .topDepart {
@@ -17,6 +17,8 @@ header  {
 h2 {
     text-align: center;
     border: 3px black outset;
+    width: auto;
+
 }
 
 div[class*="col"] {
@@ -26,14 +28,20 @@ div[class*="col"] {
 .role {
     text-align: center;
 }
+h2,h2{
+  background-image: url(/home/wilder/projet/reims-1018-java-le-quizz/dobby.jpeg);
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-attachment: local;
+}
 
 header {
-    background-image: url(GoldBanner.jpg);  
+    background-image: url(/home/wilder/projet/reims-1018-java-le-quizz/banniere.jpeg);
     background-repeat: no-repeat;
     background-size: 100%;
-    
+
 }
 
 h1 {
-    color: white; 
+    color: black;
 }
